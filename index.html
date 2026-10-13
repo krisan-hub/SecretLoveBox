@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3e9ff">
+  <title>The Secret Love Box 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <span class="tiny-heart">♡</span>
+    <span>MADE WITH LOVE</span>
+    <span class="tiny-heart">♡</span>
+  </header>
+
+  <main class="game-shell">
+    <section class="intro" id="intro">
+      <div class="gift-icon" aria-hidden="true">🎁</div>
+      <p class="eyebrow">A LITTLE MYSTERY FOR YOU</p>
+      <h1>The Secret<br><span>Love Box</span></h1>
+      <p class="intro-copy">Someone special left a little treasure just for you.<br> Solve three tiny puzzles to discover what's inside. 💌</p>
+      <div class="promise-row"><span>🌷 3 cute puzzles</span><span>💜 1 secret surprise</span></div>
+      <button class="primary-btn" id="begin-btn">Unlock the mystery ✨</button>
+      <p class="microcopy">No rush, my love. Take your time.</p>
+    </section>
+
+    <section class="puzzle-card hidden" id="puzzle-card" aria-live="polite">
+      <div class="progress-line"><div id="progress-fill"></div></div>
+      <div class="step-row"><span id="step-label">PUZZLE 1 OF 3</span><span id="hearts-label">♡ ♡ ♡</span></div>
+      <div class="puzzle-emoji" id="puzzle-emoji">🔐</div>
+      <h2 id="puzzle-title">The First Little Secret</h2>
+      <p class="puzzle-prompt" id="puzzle-prompt"></p>
+      <div id="puzzle-content"></div>
+      <div class="feedback" id="feedback" role="status"></div>
+      <button class="hint-btn" id="hint-btn">Need a tiny clue? 💭</button>
+      <p class="hint-text hidden" id="hint-text"></p>
+    </section>
+
+    <section class="ending-card hidden" id="ending-card">
+      <div class="confetti" aria-hidden="true">✦ ✧ ♡ ✧ ✦</div>
+      <div class="gift-icon">💝</div>
+      <p class="eyebrow">YOU UNLOCKED MY HEART</p>
+      <h2>The real treasure<br><span>was always you.</span></h2>
+      <p class="ending-copy">You solved every clue! There's one last thing inside the box...</p>
+      <button class="primary-btn" id="open-letter-btn">Open your letter 💌</button>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="letter-modal" role="dialog" aria-modal="true" aria-labelledby="letter-title">
+    <article class="letter">
+      <button class="close-btn" id="close-letter-btn" aria-label="Close letter">×</button>
+      <div class="letter-stamp">💌</div>
+      <p class="eyebrow">A NOTE FROM MY HEART</p>
+      <h2 id="letter-title">To My Love ♡</h2>
+      <p class="letter-body" id="letter-body">Out of all the little surprises in this world, you are still my favorite. Thank you for being you. If I had to choose all over again, I would still choose you. Today, tomorrow, and in all the ordinary moments in between. 💜</p>
+      <p class="letter-signoff">Always yours, <span>♡</span></p>
+      <button class="primary-btn" id="again-btn">Play our little mystery again</button>
+    </article>
+  </div>
+
+  <footer>one little box, a whole lot of love ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
